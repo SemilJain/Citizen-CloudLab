@@ -22,7 +22,7 @@ sudo systemctl restart nginx
 
 # Check if Nginx is running
 if systemctl is-active --quiet nginx ; then
-    echo "Nginx web server is running on port 8083"
+    echo "Nginx web server is running on port 8083" > /local/repository/status
 else
-    echo "Failed to start Nginx web server."
+    echo "Failed to start Nginx web server."  > /local/repository/status
 fi
