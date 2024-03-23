@@ -1,0 +1,13 @@
+server {
+        listen 8083;
+        listen [::]:8083;
+
+        root /var/www/citizen-cloudlab/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
