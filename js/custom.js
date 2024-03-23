@@ -6,7 +6,7 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('images/banner.jpg');
+		$(".banner-image").backstretch('images/drought_4.jpg');
 		
 		// Fixed header
 		//-----------------------------------------------
